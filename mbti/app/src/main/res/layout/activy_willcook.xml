@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+    <ImageView
+        android:src="@drawable/icon_present"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/black"
+        android:text="요리를 해볼까?"
+        android:fontFamily="@font/nanumbarunpenb"
+        android:textSize="40sp"
+        />
+    <Button
+        android:id="@+id/Button_can"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:text="오늘 실력발휘 좀 해불까?"
+        android:background="@drawable/btn_flavor"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="23sp"
+        android:layout_margin="20dp"
+        >
+    </Button>
+    <Button
+        android:id="@+id/Button_cant"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:text="난..라면도 태우는 똥손이야.."
+        android:background="@drawable/btn_flavor"
+        android:textSize="20sp"
+        >
+    </Button>
+</LinearLayout>

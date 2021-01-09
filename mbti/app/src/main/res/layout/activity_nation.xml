@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+    <ImageView
+        android:src="@drawable/icon_present"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/black"
+        android:text="어제 먹은 음식은?"
+        android:fontFamily="@font/nanumbarunpenb"
+        android:textSize="40sp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        >
+        <Button
+            android:id="@+id/Button_fried"
+            android:layout_width="140dp"
+            android:layout_height="60dp"
+            android:text="튀김"
+            android:background="@drawable/btn_flavor"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            android:layout_marginRight="30dp"
+            >
+        </Button>
+        <Button
+            android:id="@+id/Button_flour"
+            android:layout_width="140dp"
+            android:layout_height="60dp"
+            android:text="면/떡"
+            android:background="@drawable/btn_flavor"
+            android:textSize="25sp"
+            >
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        >
+        <Button
+            android:id="@+id/Button_meat"
+            android:layout_width="140dp"
+            android:layout_height="60dp"
+            android:text="고기"
+            android:background="@drawable/btn_flavor"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            android:layout_marginRight="30dp"
+            >
+        </Button>
+        <Button
+            android:id="@+id/Button_etc"
+            android:layout_width="140dp"
+            android:layout_height="60dp"
+            android:text="기"
+            android:background="@drawable/btn_flavor"
+            android:textSize="25sp"
+            >
+        </Button>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
