@@ -11,8 +11,11 @@ import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.facebook.common.util.UriUtil;
 import com.facebook.drawee.backends.pipeline.Fresco;
+import com.facebook.drawee.interfaces.DraweeController;
 import com.facebook.drawee.view.SimpleDraweeView;
+import com.facebook.imagepipeline.request.ImageRequest;
 
 import java.net.URI;
 import java.util.ArrayList;
@@ -21,7 +24,7 @@ import java.util.ArrayList;
 public class ReceipeAdapter extends RecyclerView.Adapter<ReceipeAdapter.ViewHolder> {
     private ArrayList<ReceipeInfo> mData;
 
-    public static class ViewHolder extends RecyclerView.ViewHolder {
+    public class ViewHolder extends RecyclerView.ViewHolder {
         TextView textView;
         SimpleDraweeView imgView;
 
@@ -51,15 +54,18 @@ public class ReceipeAdapter extends RecyclerView.Adapter<ReceipeAdapter.ViewHold
 
         ReceipeInfo ri = mData.get(position);
 
-        Uri uri = Uri.parse(ri.getImgsrc());
-
-        Log.d("uri", uri.toString());
-
+        //Uri uri = Uri.parse(ri.getImgsrc());
+        Uri uri = new Uri.Builder()
+                .scheme(UriUtil.LOCAL_RESOURCE_SCHEME)
+                .path("/Users/syexn/Desktop/m/mbti/2021-71-cheese-added-to-Yeopgi-Tteokbokki/mbti/app/src/main/res/drawable/carbonara.jpg")
+                .build();
         holder.imgView.setImageURI(uri);
 
-        Log.d("uri", uri.toString());
+        //Log.d("uri", uri.toString());
+        //Log.d("imgView", holder.imgView.toString());
 
         holder.textView.setText(mData.get(position).getName());
+
     }
 
     public int getItemCount(){

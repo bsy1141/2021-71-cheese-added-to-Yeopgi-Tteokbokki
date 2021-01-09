@@ -30,6 +30,7 @@ public class ReceipeActivity extends Activity {
     private RecyclerView.LayoutManager layoutManager;
     private ArrayList<ReceipeInfo> mData;
 
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
