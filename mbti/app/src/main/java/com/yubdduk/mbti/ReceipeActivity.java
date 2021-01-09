@@ -2,7 +2,10 @@ package com.yubdduk.mbti;
 
 import android.app.Activity;
 import android.content.res.AssetManager;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
+import android.util.Log;
 
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -16,6 +19,8 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.net.URL;
+import java.net.URLConnection;
 import java.util.ArrayList;
 
 public class ReceipeActivity extends Activity {
@@ -24,6 +29,7 @@ public class ReceipeActivity extends Activity {
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager layoutManager;
     private ArrayList<ReceipeInfo> mData;
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -39,10 +45,12 @@ public class ReceipeActivity extends Activity {
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
 
-
         // specify an adapter (see also next example)
         mData = new ArrayList<>();
-        mAdapter = new ReceipeAdapter(mData);
+
+        foodJsonParser();
+
+        mAdapter = new ReceipeAdapter(mData, ReceipeActivity.this);
         recyclerView.setAdapter(mAdapter);
 
         /*List Add
@@ -51,7 +59,7 @@ public class ReceipeActivity extends Activity {
         mData.add(new ReceipeInfo("71개"));
         */
 
-        foodJsonParser();
+        //foodJsonParser();
     }
 
     void foodJsonParser(){
@@ -64,6 +72,8 @@ public class ReceipeActivity extends Activity {
             InputStream is = am.open("receipe_base.json");
             InputStreamReader isr = new InputStreamReader(is);
             BufferedReader reader = new BufferedReader(isr);
+
+            //ArrayList<ReceipeInfo> ri = new ArrayList<>;
 
             StringBuffer buffer = new StringBuffer();
             String line = reader.readLine();
@@ -84,8 +94,13 @@ public class ReceipeActivity extends Activity {
                 JSONObject jo = jsonArray.getJSONObject(i);
 
                 String name = jo.getString("RECIPE_NM_KO");
+                String imgSrc = jo.getString("IMG_URL");
 
-                mData.add(new ReceipeInfo(name));
+
+
+
+                mData.add(new ReceipeInfo(name, imgSrc));
+
             }
         } catch(IOException e) { e.printStackTrace(); }
         catch(JSONException e) { e.printStackTrace(); }

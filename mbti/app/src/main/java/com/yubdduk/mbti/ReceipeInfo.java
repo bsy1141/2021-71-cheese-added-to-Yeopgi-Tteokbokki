@@ -5,16 +5,16 @@ import android.widget.ImageView;
 public class ReceipeInfo {
     private String name;
     private String receipe;
-    private int img;
+    private String imgsrc;
 
-    public ReceipeInfo(String name, int img){
+    public ReceipeInfo(String name, String imgsrc){
         this.name = name;
-        this.img = img;
+        this.imgsrc = imgsrc;
     }
 
-    public ReceipeInfo(String name){
-        this.name = name;
-    }
+    //public ReceipeInfo(String name){
+    //    this.name = name;
+    //}
 
     public String getName() {
         return name;
@@ -24,19 +24,8 @@ public class ReceipeInfo {
         return receipe;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public String getImgsrc() {
+        return imgsrc;
     }
 
-    public void setReceipe(String receipe) {
-        this.receipe = receipe;
-    }
-
-    public int getImg() {
-        return img;
-    }
-
-    public void setImg(int img) {
-        this.img = img;
-    }
 }
