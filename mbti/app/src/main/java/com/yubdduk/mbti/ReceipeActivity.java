@@ -1,6 +1,7 @@
 package com.yubdduk.mbti;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.content.res.AssetManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -10,8 +11,6 @@ import android.util.Log;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import com.facebook.drawee.backends.pipeline.Fresco;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -32,11 +31,18 @@ public class ReceipeActivity extends Activity {
     private RecyclerView.LayoutManager layoutManager;
     private ArrayList<ReceipeInfo> mData;
 
+    public static String nation="";
+    public static int time=0;
+    public static int level=0;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_receipe);
+        Intent getIntent=getIntent();
+        nation=getIntent.getStringExtra("nation");
+        time=getIntent.getIntExtra("time",0);
+        level=getIntent.getIntExtra("level",0);
 
         // RecyclerView 변수 정의
         recyclerView = (RecyclerView) findViewById(R.id.receipe_recycler_view);
@@ -91,16 +97,72 @@ public class ReceipeActivity extends Activity {
             String data = jsonObject.getString("data");
 
             JSONArray jsonArray = new JSONArray(data);
+            if (time == 1 && level == 1) {
 
-            for(int i=0;i<jsonArray.length();i++){
-                JSONObject jo = jsonArray.getJSONObject(i);
+                for (int i = 0; i < jsonArray.length(); i++) {
+                    JSONObject jo = jsonArray.getJSONObject(i);
 
-                String name = jo.getString("RECIPE_NM_KO");
-                String imgSrc = jo.getString("IMG_URL");
+                    String name = jo.getString("RECIPE_NM_KO");
+                    String imgSrc = jo.getString("IMG_URL");
 
-                mData.add(new ReceipeInfo(name, imgSrc));
+                    String nation_food=jo.getString("NATION_NM");
+                    String time_food=jo.getString("COOKING_TIME");
+                    String level_food=jo.getString("LEVEL_NM");
+
+                    if (nation.equals(nation_food) && (time_food.equals("10분") || time_food.equals("20분") || time_food.equals("30분")) && level_food.equals("초보환영")){
+                    mData.add(new ReceipeInfo(name, imgSrc));
+
+                    }
+                }
+            }else if(time==1&&level==2){
+                for (int i = 0; i < jsonArray.length(); i++) {
+                    JSONObject jo = jsonArray.getJSONObject(i);
+
+                    String name = jo.getString("RECIPE_NM_KO");
+                    String imgSrc = jo.getString("IMG_URL");
+
+                    String nation_food=jo.getString("NATION_NM");
+                    String time_food=jo.getString("COOKING_TIME");
+                    String level_food=jo.getString("LEVEL_NM");
+
+                    if (nation.equals(nation_food) &&(time_food.equals("10분") || time_food.equals("20분") || time_food.equals("30분")) && level_food.equals("초보환영")){
+                        mData.add(new ReceipeInfo(name, imgSrc));
+
+                    }
+                }
+            }else if(time==2&&level==1){
+                for (int i = 0; i < jsonArray.length(); i++) {
+                    JSONObject jo = jsonArray.getJSONObject(i);
+
+                    String name = jo.getString("RECIPE_NM_KO");
+                    String imgSrc = jo.getString("IMG_URL");
+
+                    String nation_food=jo.getString("NATION_NM");
+                    String time_food=jo.getString("COOKING_TIME");
+                    String level_food=jo.getString("LEVEL_NM");
+
+                    if (nation.equals(nation_food) &&  (time_food.equals("40분") || time_food.equals("50분") || time_food.equals("60분")) &&level_food.equals("초보환영")){
+                        mData.add(new ReceipeInfo(name, imgSrc));
+
+                    }
+                }
+            }else if(time==2&&level==2) {
+                for (int i = 0; i < jsonArray.length(); i++) {
+                    JSONObject jo = jsonArray.getJSONObject(i);
+
+                    String name = jo.getString("RECIPE_NM_KO");
+                    String imgSrc = jo.getString("IMG_URL");
+
+                    String nation_food = jo.getString("NATION_NM");
+                    String time_food = jo.getString("COOKING_TIME");
+                    String level_food = jo.getString("LEVEL_NM");
+                    if (nation.equals(nation_food) && (time_food.equals("40분") || time_food.equals("50분") || time_food.equals("60분")) && (level_food.equals("보통") || level_food.equals("어려움"))) {
+                        mData.add(new ReceipeInfo(name, imgSrc));
+                    }
+                }
 
             }
+
         } catch(IOException e) { e.printStackTrace(); }
         catch(JSONException e) { e.printStackTrace(); }
 

@@ -34,7 +34,7 @@ public class LevelActivity extends Activity {
         highbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                level=1;
+                level=2;
                 Intent intent=new Intent(LevelActivity.this, ReceipeActivity.class);
                 intent.putExtra("nation",nation);
                 intent.putExtra("time",time);
