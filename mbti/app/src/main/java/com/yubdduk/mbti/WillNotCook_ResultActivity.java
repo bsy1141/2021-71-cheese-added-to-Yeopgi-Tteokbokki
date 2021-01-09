@@ -11,10 +11,10 @@ import android.widget.TextView;
 import org.w3c.dom.Text;
 
 public class WillNotCook_ResultActivity extends Activity {
-    public static String foods[][]={{"크로플","호르몬동","갈비천왕 치킨","칠리새우"},
-            {"샌드위치","피자","햄버거","토마토 리조또"},
-            {"떡꼬치","마라탕","매운 족발", " 떡볶이"},
-            {"맥 앤 치즈","까르보나라","텐동","알리오올리오"}};
+    public static String foods[][]={{"촉촉한 크로플이","달짝지근한 호르몬동이","짭짤한 갈비천왕 치킨이","새콤한 칠리새우가"},
+            {"간편한 샌드위치가","치즈가 고소한 피자가","수버거제가","토마토 리조또가"},
+            {"떡꼬치가","마라수치가 낮네요!! 마라탕이","땀날만큼 매운 족발이", "쫄깃한 떡볶이가"},
+            {"맥 앤 치즈가","크림가득 까르보나라가","바삭한 튀김이 가득한 텐동이","마늘향 가득 알리오올리오가"}};
 
 
     public static Integer photos[][]={{R.drawable.croffle, R.drawable.daechang_rice, R.drawable.galbiking, R.drawable.chili_shrimp},
