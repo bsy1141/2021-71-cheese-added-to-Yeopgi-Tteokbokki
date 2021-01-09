@@ -37,6 +37,7 @@
         android:layout_marginBottom="20dp"
         >
     <Button
+        android:id="@+id/Button_flavor_sweet"
         android:layout_width="140dp"
         android:layout_height="60dp"
         android:text="단맛"
@@ -46,6 +47,7 @@
         android:layout_gravity="center"
         android:layout_marginRight="30dp"/>
     <Button
+        android:id="@+id/Button_flavor_salty"
         android:layout_width="140dp"
         android:layout_height="60dp"
         android:text="짠맛"
@@ -60,6 +62,7 @@
         android:orientation="horizontal"
         android:gravity="center">
         <Button
+            android:id="@+id/Button_flavor_spicy"
             android:layout_width="140dp"
             android:layout_height="60dp"
             android:text="매운맛"
@@ -69,6 +72,7 @@
             android:layout_gravity="center"
             android:layout_marginRight="30dp"/>
         <Button
+            android:id="@+id/Button_flavor_oily"
             android:layout_width="140dp"
             android:layout_height="60dp"
             android:background="@drawable/btn_flavor"
