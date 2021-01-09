@@ -11,7 +11,6 @@ import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.facebook.common.util.UriUtil;
 import com.facebook.drawee.backends.pipeline.Fresco;
 import com.facebook.drawee.interfaces.DraweeController;
 import com.facebook.drawee.view.SimpleDraweeView;
@@ -54,14 +53,18 @@ public class ReceipeAdapter extends RecyclerView.Adapter<ReceipeAdapter.ViewHold
 
         ReceipeInfo ri = mData.get(position);
 
-        //Uri uri = Uri.parse(ri.getImgsrc());
-        Uri uri = new Uri.Builder()
-                .scheme(UriUtil.LOCAL_RESOURCE_SCHEME)
-                .path("/Users/syexn/Desktop/m/mbti/2021-71-cheese-added-to-Yeopgi-Tteokbokki/mbti/app/src/main/res/drawable/carbonara.jpg")
-                .build();
-        holder.imgView.setImageURI(uri);
+        Uri uri = Uri.parse(ri.getImgsrc());
+
+        ImageRequest request = ImageRequest.fromUri(uri);
+
+        DraweeController controller = Fresco.newDraweeControllerBuilder()
+                .setImageRequest(request)
+                .setOldController(holder.imgView.getController()).build();
+
+//        holder.imgView.setController(controller);
 
         //Log.d("uri", uri.toString());
+        holder.imgView.setImageURI(uri);
         //Log.d("imgView", holder.imgView.toString());
 
         holder.textView.setText(mData.get(position).getName());

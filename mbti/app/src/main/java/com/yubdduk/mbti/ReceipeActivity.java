@@ -11,6 +11,8 @@ import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.facebook.drawee.backends.pipeline.Fresco;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
