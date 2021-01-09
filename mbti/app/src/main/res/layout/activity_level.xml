@@ -28,7 +28,7 @@
         android:textSize="35sp"
         />
     <Button
-        android:id="@+id/Button_slow"
+        android:id="@+id/Button_low"
             android:layout_width="320dp"
             android:layout_height="60dp"
             android:text="볶음밥이 내 한계야.."
@@ -42,7 +42,7 @@
             >
         </Button>
         <Button
-            android:id="@+id/Button_fast"
+            android:id="@+id/Button_high"
             android:layout_width="320dp"
             android:layout_height="60dp"
             android:text="볶음밥은 껌이지~"
