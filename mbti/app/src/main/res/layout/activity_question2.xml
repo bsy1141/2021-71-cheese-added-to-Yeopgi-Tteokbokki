@@ -25,7 +25,7 @@
         android:layout_marginBottom="30dp"
         android:textColor="@color/black"
         android:text="지금 얼마나 배고파?"
-        android:fontFamily="@font/NanumBarunpenB"
+        android:fontFamily="@font/nanumbarunpenb"
         android:textSize="40sp"
 
         />
