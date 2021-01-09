@@ -9,11 +9,11 @@
     >
 
     <ImageView
-        android:src="@drawable/icon_present"
+        android:src="@drawable/icon_yester"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="100dp"
         android:layout_gravity="center"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="30dp"
         />
     <TextView
         android:layout_width="match_parent"
@@ -21,7 +21,7 @@
         android:paddingHorizontal="20dp"
         android:layout_gravity="center"
         android:gravity="center"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="50dp"
         android:textColor="@color/black"
         android:text="어제 먹은 음식은?"
         android:fontFamily="@font/nanumbarunpenb"
@@ -31,7 +31,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="30dp"
         >
         <Button
             android:id="@+id/Button_fried"
@@ -39,9 +39,11 @@
             android:layout_height="60dp"
             android:text="튀김"
             android:background="@drawable/btn_flavor"
+            android:fontFamily="@font/nanumbarunpenb"
             android:layout_gravity="center"
             android:textSize="25sp"
             android:layout_marginRight="30dp"
+            android:textStyle="bold"
             >
         </Button>
         <Button
@@ -49,8 +51,10 @@
             android:layout_width="140dp"
             android:layout_height="60dp"
             android:text="면/떡"
+            android:fontFamily="@font/nanumbarunpenb"
             android:background="@drawable/btn_flavor"
             android:textSize="25sp"
+            android:textStyle="bold"
             >
         </Button>
 
@@ -60,26 +64,30 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="30dp"
         >
         <Button
             android:id="@+id/Button_meat"
             android:layout_width="140dp"
             android:layout_height="60dp"
             android:text="고기"
+            android:fontFamily="@font/nanumbarunpenb"
             android:background="@drawable/btn_flavor"
             android:layout_gravity="center"
             android:textSize="25sp"
             android:layout_marginRight="30dp"
+            android:textStyle="bold"
             >
         </Button>
         <Button
             android:id="@+id/Button_etc"
             android:layout_width="140dp"
             android:layout_height="60dp"
-            android:text="기"
+            android:text="기타"
+            android:fontFamily="@font/nanumbarunpenb"
             android:background="@drawable/btn_flavor"
             android:textSize="25sp"
+            android:textStyle="bold"
             >
         </Button>
 

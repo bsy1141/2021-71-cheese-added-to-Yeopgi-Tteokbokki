@@ -9,11 +9,11 @@
     >
 
     <ImageView
-        android:src="@drawable/icon_present"
+        android:src="@drawable/icon_alarm"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:layout_gravity="center"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="30dp"
     />
     <TextView
         android:layout_width="match_parent"
@@ -21,7 +21,7 @@
         android:paddingHorizontal="20dp"
         android:layout_gravity="center"
         android:gravity="center"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="40dp"
         android:textColor="@color/black"
         android:text="시간은 금이지!\n하지만..음식앞에서도 그럴까?"
         android:fontFamily="@font/nanumbarunpenb"
@@ -36,7 +36,9 @@
             android:layout_gravity="center"
             android:gravity="center"
             android:textSize="23sp"
-            android:layout_margin="20dp"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/nanumbarunpenb"
+        android:textStyle="bold"
             >
         </Button>
         <Button
@@ -46,6 +48,9 @@
             android:text="간단한게 최고지"
             android:background="@drawable/btn_flavor"
             android:textSize="20sp"
+            android:fontFamily="@font/nanumbarunpenb"
+            android:textStyle="bold"
+            android:layout_marginBottom="30dp"
             >
         </Button>
 </LinearLayout>

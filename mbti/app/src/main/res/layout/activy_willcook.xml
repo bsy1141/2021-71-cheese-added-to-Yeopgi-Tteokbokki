@@ -9,11 +9,11 @@
     >
 
     <ImageView
-        android:src="@drawable/icon_present"
+        android:src="@drawable/icon_chef"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="100dp"
         android:layout_gravity="center"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="30dp"
         />
     <TextView
         android:layout_width="match_parent"
@@ -21,11 +21,11 @@
         android:paddingHorizontal="20dp"
         android:layout_gravity="center"
         android:gravity="center"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="50dp"
         android:textColor="@color/black"
         android:text="요리를 해볼까?"
         android:fontFamily="@font/nanumbarunpenb"
-        android:textSize="40sp"
+        android:textSize="50sp"
         />
     <Button
         android:id="@+id/Button_can"
@@ -35,8 +35,10 @@
         android:background="@drawable/btn_flavor"
         android:layout_gravity="center"
         android:gravity="center"
-        android:textSize="23sp"
-        android:layout_margin="20dp"
+        android:textSize="25sp"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/nanumbarunpenb"
+        android:textStyle="bold"
         >
     </Button>
     <Button
@@ -45,7 +47,10 @@
         android:layout_height="60dp"
         android:text="난..라면도 태우는 똥손이야.."
         android:background="@drawable/btn_flavor"
-        android:textSize="20sp"
+        android:textSize="25sp"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/nanumbarunpenb"
+        android:textStyle="bold"
         >
     </Button>
 </LinearLayout>
