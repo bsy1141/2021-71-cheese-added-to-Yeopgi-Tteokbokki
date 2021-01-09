@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="배달시킬 당신, \n추천 메뉴는 바로 이것"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/nanumbarunpenb"
+        android:textColor="#000000"/>
+
+    <ImageView
+        android:id="@+id/food_image"
+        android:layout_width="300dp"
+        android:layout_height="250dp"/>
+
+    <TextView
+        android:id="@+id/food_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/food_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:fontFamily="@font/nanumbarunpenb"/>
+
+    <Button
+        android:id="@+id/gohome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:background="@color/light_coral"
+        android:text="메인화면으로" />
+</LinearLayout>
