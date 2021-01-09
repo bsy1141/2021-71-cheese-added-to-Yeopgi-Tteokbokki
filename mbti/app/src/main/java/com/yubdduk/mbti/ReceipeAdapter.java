@@ -1,6 +1,8 @@
 package com.yubdduk.mbti;
 
 import android.content.Context;
+import android.net.Uri;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,6 +10,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
+import com.facebook.drawee.backends.pipeline.Fresco;
+import com.facebook.drawee.view.SimpleDraweeView;
+
+import java.net.URI;
 import java.util.ArrayList;
 
 
@@ -15,19 +22,20 @@ public class ReceipeAdapter extends RecyclerView.Adapter<ReceipeAdapter.ViewHold
     private ArrayList<ReceipeInfo> mData;
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
-        ImageView imageView;
         TextView textView;
+        SimpleDraweeView imgView;
 
         public ViewHolder(View v) {
-
             super(v);
-            imageView = v.findViewById(R.id.image);
+            //imageView = v.findViewById(R.id.image);
             textView = v.findViewById(R.id.title);
+            imgView = (SimpleDraweeView) v.findViewById(R.id.image);
         }
     }
 
-    public ReceipeAdapter(ArrayList<ReceipeInfo> mData) {
+    public ReceipeAdapter(ArrayList<ReceipeInfo> mData, Context context) {
         this.mData = mData;
+        Fresco.initialize(context);
     }
 
     public ReceipeAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -40,7 +48,17 @@ public class ReceipeAdapter extends RecyclerView.Adapter<ReceipeAdapter.ViewHold
     }
 
     public void onBindViewHolder(ViewHolder holder, int position){
-        holder.imageView.setImageResource(mData.get(position).getImg());
+
+        ReceipeInfo ri = mData.get(position);
+
+        Uri uri = Uri.parse(ri.getImgsrc());
+
+        Log.d("uri", uri.toString());
+
+        holder.imgView.setImageURI(uri);
+
+        Log.d("uri", uri.toString());
+
         holder.textView.setText(mData.get(position).getName());
     }
 

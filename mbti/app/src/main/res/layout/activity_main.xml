@@ -15,6 +15,7 @@
         android:textStyle="bold"
         android:textSize="50sp"
         ></TextView>
+
     <Button
         android:layout_width="300dp"
         android:layout_height="80dp"
