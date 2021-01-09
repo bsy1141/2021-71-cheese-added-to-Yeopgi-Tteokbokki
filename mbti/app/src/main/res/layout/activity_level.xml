@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+    <ImageView
+        android:src="@drawable/icon_level"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+    />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginBottom="40dp"
+        android:textColor="@color/black"
+        android:text="나 이정도 요리는 하지~"
+        android:fontFamily="@font/nanumbarunpenb"
+        android:textSize="35sp"
+        />
+    <Button
+        android:id="@+id/Button_slow"
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            android:text="볶음밥이 내 한계야.."
+            android:background="@drawable/btn_flavor"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="23sp"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/nanumbarunpenb"
+        android:textStyle="bold"
+            >
+        </Button>
+        <Button
+            android:id="@+id/Button_fast"
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            android:text="볶음밥은 껌이지~"
+            android:background="@drawable/btn_flavor"
+            android:textSize="20sp"
+            android:fontFamily="@font/nanumbarunpenb"
+            android:textStyle="bold"
+            android:layout_marginBottom="30dp"
+            >
+        </Button>
+</LinearLayout>
