@@ -98,9 +98,6 @@ public class ReceipeActivity extends Activity {
                 String name = jo.getString("RECIPE_NM_KO");
                 String imgSrc = jo.getString("IMG_URL");
 
-
-
-
                 mData.add(new ReceipeInfo(name, imgSrc));
 
             }
