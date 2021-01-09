@@ -9,7 +9,7 @@
     >
 
     <ImageView
-        android:src="@drawable/icon_present"
+        android:src="@drawable/icon_pan"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:layout_gravity="center"
@@ -42,7 +42,7 @@
         android:weightSum="1"
         >
         <ImageView
-            android:src="@drawable/icon_present"
+            android:src="@drawable/happy"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_weight="1"
@@ -73,7 +73,7 @@
         android:weightSum="1"
         >
         <ImageView
-            android:src="@drawable/almost_die"
+            android:src="@drawable/soso"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_weight="1"
