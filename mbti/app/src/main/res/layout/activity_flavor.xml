@@ -13,7 +13,7 @@
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_gravity="center"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="30dp"
 
     />
     <TextView
@@ -22,7 +22,7 @@
         android:paddingHorizontal="20dp"
         android:layout_gravity="center"
         android:gravity="center"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="50dp"
         android:textColor="@color/black"
         android:text="지금 끌리는 맛은?"
         android:fontFamily="@font/nanumbarunpenb"
@@ -34,7 +34,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="30dp"
         >
     <Button
         android:id="@+id/Button_flavor_sweet"
@@ -62,7 +62,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center">
+        android:gravity="center"
+        android:layout_marginBottom="30dp"
+        >
         <Button
             android:id="@+id/Button_flavor_spicy"
             android:layout_width="140dp"
@@ -85,6 +87,4 @@
             android:textSize="25sp"
             android:layout_gravity="center"/>
     </LinearLayout>
-
-
 </LinearLayout>

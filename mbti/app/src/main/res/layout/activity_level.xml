@@ -9,9 +9,9 @@
     >
 
     <ImageView
-        android:src="@drawable/icon_alarm"
+        android:src="@drawable/icon_level"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="100dp"
         android:layout_gravity="center"
         android:layout_marginBottom="30dp"
     />
@@ -23,15 +23,15 @@
         android:gravity="center"
         android:layout_marginBottom="40dp"
         android:textColor="@color/black"
-        android:text="시간은 금이지!\n하지만..음식앞에서도 그럴까?"
+        android:text="나 이정도 요리는 하지~"
         android:fontFamily="@font/nanumbarunpenb"
-        android:textSize="30sp"
+        android:textSize="35sp"
         />
     <Button
-        android:id="@+id/Button_slow"
+        android:id="@+id/Button_low"
             android:layout_width="320dp"
             android:layout_height="60dp"
-            android:text="한 끼를 먹어도 제대로 먹자"
+            android:text="볶음밥이 내 한계야.."
             android:background="@drawable/btn_flavor"
             android:layout_gravity="center"
             android:gravity="center"
@@ -42,10 +42,10 @@
             >
         </Button>
         <Button
-            android:id="@+id/Button_fast"
+            android:id="@+id/Button_high"
             android:layout_width="320dp"
             android:layout_height="60dp"
-            android:text="간단한게 최고지"
+            android:text="볶음밥은 껌이지~"
             android:background="@drawable/btn_flavor"
             android:textSize="20sp"
             android:fontFamily="@font/nanumbarunpenb"

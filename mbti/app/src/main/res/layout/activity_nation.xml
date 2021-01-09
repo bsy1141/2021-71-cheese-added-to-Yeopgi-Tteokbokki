@@ -9,11 +9,11 @@
     >
 
     <ImageView
-        android:src="@drawable/icon_present"
+        android:src="@drawable/icon_globe"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:layout_gravity="center"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="30dp"
         />
     <TextView
         android:layout_width="match_parent"
@@ -21,22 +21,25 @@
         android:paddingHorizontal="20dp"
         android:layout_gravity="center"
         android:gravity="center"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="20dp"
         android:textColor="@color/black"
         android:text="어느 나라로 떠나볼까?"
         android:fontFamily="@font/nanumbarunpenb"
         android:textSize="40sp"
+        android:textStyle="bold"
         />
     <Button
         android:id="@+id/Button_china"
         android:layout_width="320dp"
         android:layout_height="60dp"
         android:text="니하오~불맛 가득 중국음식"
+        android:fontFamily="@font/nanumbarunpenb"
         android:background="@drawable/btn_flavor"
         android:layout_gravity="center"
         android:gravity="center"
         android:textSize="23sp"
         android:layout_margin="20dp"
+        android:textStyle="bold"
         >
     </Button>
     <Button
@@ -44,8 +47,10 @@
         android:layout_width="320dp"
         android:layout_height="60dp"
         android:text="곤니찌와~깔끔한 일본음식"
+        android:fontFamily="@font/nanumbarunpenb"
         android:background="@drawable/btn_flavor"
         android:textSize="20sp"
+        android:textStyle="bold"
         >
     </Button>
     <Button
@@ -53,11 +58,13 @@
         android:layout_width="320dp"
         android:layout_height="60dp"
         android:text="한국인은 밥심이지!!"
+        android:fontFamily="@font/nanumbarunpenb"
         android:background="@drawable/btn_flavor"
         android:layout_gravity="center"
         android:gravity="center"
         android:textSize="23sp"
         android:layout_margin="20dp"
+        android:textStyle="bold"
         >
     </Button>
     <Button
@@ -65,8 +72,10 @@
         android:layout_width="320dp"
         android:layout_height="60dp"
         android:text="Ciao 서양음식은 어때"
+        android:fontFamily="@font/nanumbarunpenb"
         android:background="@drawable/btn_flavor"
         android:textSize="20sp"
+        android:textStyle="bold"
 
         >
     </Button>
@@ -75,9 +84,11 @@
         android:layout_width="320dp"
         android:layout_height="60dp"
         android:text="흠..다 먹고싶은데..?"
+        android:fontFamily="@font/nanumbarunpenb"
         android:background="@drawable/btn_flavor"
         android:textSize="20sp"
         android:layout_margin="20dp"
+        android:textStyle="bold"
         >
     </Button>
 </LinearLayout>

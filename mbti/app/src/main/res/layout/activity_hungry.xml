@@ -9,7 +9,7 @@
     >
 
     <ImageView
-        android:src="@drawable/icon_present"
+        android:src="@drawable/icon_pan"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:layout_gravity="center"
@@ -42,9 +42,9 @@
         android:weightSum="1"
         >
         <ImageView
-            android:src="@drawable/icon_present"
+            android:src="@drawable/happy"
             android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_height="60dp"
             android:layout_weight="1"
             android:gravity="center"
             android:layout_marginRight="20dp"
@@ -57,6 +57,7 @@
             android:textSize="25sp"
             android:textStyle="bold"
             android:gravity="center"
+            android:textColor="@color/black"
             android:layout_marginRight="30dp"/>
 
     </RelativeLayout>
@@ -73,9 +74,9 @@
         android:weightSum="1"
         >
         <ImageView
-            android:src="@drawable/almost_die"
+            android:src="@drawable/soso"
             android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_height="60dp"
             android:layout_weight="1"
             android:gravity="center"
             android:layout_marginRight="20dp"
@@ -83,11 +84,12 @@
         <TextView
             android:layout_width="200dp"
             android:layout_height="60dp"
-            android:text="출출해"
+            android:text="출출해.."
             android:textSize="25sp"
             android:textStyle="bold"
             android:fontFamily="@font/nanumbarunpenb"
             android:gravity="center"
+            android:textColor="@color/black"
             android:layout_marginRight="30dp"/>
 
     </RelativeLayout>
@@ -106,7 +108,7 @@
         <ImageView
             android:src="@drawable/almost_die"
             android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_height="60dp"
             android:layout_weight="1"
             android:gravity="center"
             android:layout_marginRight="20dp"
@@ -117,6 +119,7 @@
             android:text="아사 직전"
             android:textSize="25sp"
             android:textStyle="bold"
+            android:textColor="@color/black"
             android:fontFamily="@font/nanumbarunpenb"
             android:gravity="center"
             android:layout_marginRight="30dp"/>
