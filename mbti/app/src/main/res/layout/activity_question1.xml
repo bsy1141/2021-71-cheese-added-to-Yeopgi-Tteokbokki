@@ -25,7 +25,7 @@
         android:layout_marginBottom="40dp"
         android:textColor="@color/black"
         android:text="지금 끌리는 맛은?"
-
+        android:fontFamily="@font/nanumbarunpenb"
         android:textSize="40sp"
 
         />
@@ -41,6 +41,7 @@
         android:layout_width="140dp"
         android:layout_height="60dp"
         android:text="단맛"
+        android:fontFamily="@font/nanumbarunpenb"
         android:background="@drawable/btn_flavor"
         android:textSize="25sp"
         android:textStyle="bold"
@@ -51,6 +52,7 @@
         android:layout_width="140dp"
         android:layout_height="60dp"
         android:text="짠맛"
+        android:fontFamily="@font/nanumbarunpenb"
         android:background="@drawable/btn_flavor"
         android:textStyle="bold"
         android:textSize="25sp"
@@ -70,6 +72,7 @@
             android:background="@drawable/btn_flavor"
             android:textSize="25sp"
             android:layout_gravity="center"
+            android:fontFamily="@font/nanumbarunpenb"
             android:layout_marginRight="30dp"/>
         <Button
             android:id="@+id/Button_flavor_oily"
@@ -77,6 +80,7 @@
             android:layout_height="60dp"
             android:background="@drawable/btn_flavor"
             android:text="느끼한맛"
+            android:fontFamily="@font/nanumbarunpenb"
             android:textStyle="bold"
             android:textSize="25sp"
             android:layout_gravity="center"/>
