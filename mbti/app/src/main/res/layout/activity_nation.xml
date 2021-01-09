@@ -23,70 +23,61 @@
         android:gravity="center"
         android:layout_marginBottom="30dp"
         android:textColor="@color/black"
-        android:text="어제 먹은 음식은?"
+        android:text="어느 나라로 떠나볼까?"
         android:fontFamily="@font/nanumbarunpenb"
         android:textSize="40sp"
         />
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+    <Button
+        android:id="@+id/Button_china"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:text="니하오~불맛 가득 중국음식"
+        android:background="@drawable/btn_flavor"
+        android:layout_gravity="center"
         android:gravity="center"
-        android:layout_marginBottom="20dp"
+        android:textSize="23sp"
+        android:layout_margin="20dp"
         >
-        <Button
-            android:id="@+id/Button_fried"
-            android:layout_width="140dp"
-            android:layout_height="60dp"
-            android:text="튀김"
-            android:background="@drawable/btn_flavor"
-            android:layout_gravity="center"
-            android:textSize="25sp"
-            android:layout_marginRight="30dp"
-            >
-        </Button>
-        <Button
-            android:id="@+id/Button_flour"
-            android:layout_width="140dp"
-            android:layout_height="60dp"
-            android:text="면/떡"
-            android:background="@drawable/btn_flavor"
-            android:textSize="25sp"
-            >
-        </Button>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+    </Button>
+    <Button
+        android:id="@+id/Button_japan"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:text="곤니찌와~깔끔한 일본음식"
+        android:background="@drawable/btn_flavor"
+        android:textSize="20sp"
+        >
+    </Button>
+    <Button
+        android:id="@+id/Button_korea"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:text="한국인은 밥심이지!!"
+        android:background="@drawable/btn_flavor"
+        android:layout_gravity="center"
         android:gravity="center"
-        android:layout_marginBottom="20dp"
+        android:textSize="23sp"
+        android:layout_margin="20dp"
         >
-        <Button
-            android:id="@+id/Button_meat"
-            android:layout_width="140dp"
-            android:layout_height="60dp"
-            android:text="고기"
-            android:background="@drawable/btn_flavor"
-            android:layout_gravity="center"
-            android:textSize="25sp"
-            android:layout_marginRight="30dp"
-            >
-        </Button>
-        <Button
-            android:id="@+id/Button_etc"
-            android:layout_width="140dp"
-            android:layout_height="60dp"
-            android:text="기"
-            android:background="@drawable/btn_flavor"
-            android:textSize="25sp"
-            >
-        </Button>
+    </Button>
+    <Button
+        android:id="@+id/Button_west"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:text="Ciao 서양음식은 어때"
+        android:background="@drawable/btn_flavor"
+        android:textSize="20sp"
 
-    </LinearLayout>
-
-
-
-
-
+        >
+    </Button>
+    <Button
+        android:id="@+id/Button_fusion"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:text="흠..다 먹고싶은데..?"
+        android:background="@drawable/btn_flavor"
+        android:textSize="20sp"
+        android:layout_margin="20dp"
+        >
+    </Button>
 </LinearLayout>
