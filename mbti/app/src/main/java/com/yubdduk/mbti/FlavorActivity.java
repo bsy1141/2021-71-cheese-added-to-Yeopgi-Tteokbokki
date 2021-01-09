@@ -22,14 +22,44 @@ public class FlavorActivity extends Activity {
         Button spicybtn=(Button)findViewById(R.id.Button_flavor_spicy);
         Button oilybtn=(Button)findViewById(R.id.Button_flavor_oily);
 
-        /*
         sweetbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 flavor=1;
-                Intent intent=new Intent(FlavorActivity.this,YesterdayActivity.this);
+                Intent intent=new Intent(FlavorActivity.this,HungryActivity.class);
+                intent.putExtra("flavor",flavor);
+                startActivity(intent);
             }
         });
-         */
+
+        saltybtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                flavor=2;
+                Intent intent=new Intent(FlavorActivity.this,HungryActivity.class);
+                intent.putExtra("flavor",flavor);
+                startActivity(intent);
+            }
+        });
+
+        spicybtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                flavor=3;
+                Intent intent=new Intent(FlavorActivity.this,HungryActivity.class);
+                intent.putExtra("flavor",flavor);
+                startActivity(intent);
+            }
+        });
+
+        oilybtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                flavor=4;
+                Intent intent=new Intent(FlavorActivity.this,HungryActivity.class);
+                intent.putExtra("flavor",flavor);
+                startActivity(intent);
+            }
+        });
     }
 }

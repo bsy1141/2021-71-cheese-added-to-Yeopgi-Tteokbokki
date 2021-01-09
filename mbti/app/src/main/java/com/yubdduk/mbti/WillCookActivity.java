@@ -18,19 +18,18 @@ public class WillCookActivity extends Activity {
         canbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent intent=new Intent(WillCookActivity.this, NationActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        cannotbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
                 Intent intent=new Intent(WillCookActivity.this,FlavorActivity.class);
                 startActivity(intent);
             }
         });
 
-        /*
-        cannotbtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent(WillCookActivity.this, NationActivity.class);
-                startActivity(intent);
-            }
-        });
-         */
     }
 }
