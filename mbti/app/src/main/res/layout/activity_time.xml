@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+    <ImageView
+        android:src="@drawable/icon_present"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+    />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/black"
+        android:text="시간은 금이지!\n하지만..음식앞에서도 그럴까?"
+        android:fontFamily="@font/nanumbarunpenb"
+        android:textSize="30sp"
+        />
+    <Button
+        android:id="@+id/Button_slow"
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            android:text="한 끼를 먹어도 제대로 먹자"
+            android:background="@drawable/btn_flavor"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="23sp"
+            android:layout_margin="20dp"
+            >
+        </Button>
+        <Button
+            android:id="@+id/Button_fast"
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            android:text="간단한게 최고지"
+            android:background="@drawable/btn_flavor"
+            android:textSize="20sp"
+            >
+        </Button>
+</LinearLayout>
