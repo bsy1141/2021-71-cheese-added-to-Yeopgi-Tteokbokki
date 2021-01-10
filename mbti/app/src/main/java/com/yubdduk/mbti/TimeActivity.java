@@ -15,7 +15,7 @@ public class TimeActivity extends Activity {
         setContentView(R.layout.activity_time);
 
         Intent getIntent=getIntent();
-        int nation=getIntent.getIntExtra("nation",0);
+        String nation=getIntent.getStringExtra("nation");
 
         Button slowbtn=(Button)findViewById(R.id.Button_slow);
         Button fastbtn=(Button)findViewById(R.id.Button_fast);

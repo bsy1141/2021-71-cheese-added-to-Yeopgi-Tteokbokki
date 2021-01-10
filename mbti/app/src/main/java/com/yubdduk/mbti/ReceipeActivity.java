@@ -7,6 +7,9 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -30,6 +33,7 @@ public class ReceipeActivity extends Activity {
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager layoutManager;
     private ArrayList<ReceipeInfo> mData;
+    private TextView TextView_reresult;
 
     public static String nation="";
     public static int time=0;
@@ -39,6 +43,15 @@ public class ReceipeActivity extends Activity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_receipe);
+
+        Button homebtn=(Button)findViewById(R.id.going_home);
+        homebtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(ReceipeActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
         Intent getIntent=getIntent();
         nation=getIntent.getStringExtra("nation");
         time=getIntent.getIntExtra("time",0);
@@ -46,6 +59,7 @@ public class ReceipeActivity extends Activity {
 
         // RecyclerView 변수 정의
         recyclerView = (RecyclerView) findViewById(R.id.receipe_recycler_view);
+        TextView_reresult=(TextView) findViewById(R.id.TextView_reresult);
 
         recyclerView.setHasFixedSize(true);
 
@@ -110,9 +124,10 @@ public class ReceipeActivity extends Activity {
                     String level_food=jo.getString("LEVEL_NM");
 
                     if (nation.equals(nation_food) && (time_food.equals("10분") || time_food.equals("20분") || time_food.equals("30분")) && level_food.equals("초보환영")){
-                    mData.add(new ReceipeInfo(name, imgSrc));
+                        mData.add(new ReceipeInfo(name, imgSrc));
 
                     }
+
                 }
             }else if(time==1&&level==2){
                 for (int i = 0; i < jsonArray.length(); i++) {
@@ -162,6 +177,10 @@ public class ReceipeActivity extends Activity {
                 }
 
             }
+            if(mData.isEmpty()){
+                TextView_reresult.setText("데이터가 부족하네 ;_;");
+            }
+
 
         } catch(IOException e) { e.printStackTrace(); }
         catch(JSONException e) { e.printStackTrace(); }
