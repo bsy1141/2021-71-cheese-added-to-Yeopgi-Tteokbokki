@@ -12,9 +12,13 @@
         android:layout_centerInParent="true">
 
         <TextView
+            android:id="@+id/TextView_reresult"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="이건 어때?"
+            android:fontFamily="@font/nanumbarunpenb"
+            android:textStyle="bold"
+            android:textColor="@color/black"
             android:textSize="30sp"
             android:padding="10dp"
             android:gravity="center"
@@ -26,9 +30,22 @@
             android:scrollbars="vertical"
             android:id="@+id/receipe_recycler_view"
             android:padding="30dp"/>
+        <Button
+            android:id="@+id/going_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:textSize="20dp"
+            android:fontFamily="@font/nanumbarunpenb"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:paddingHorizontal="20dp"
+            android:background="@drawable/btn_min"
+            android:text="메인화면으로" />
+
 
     </LinearLayout>
-
-
-
+\
 </RelativeLayout>
+

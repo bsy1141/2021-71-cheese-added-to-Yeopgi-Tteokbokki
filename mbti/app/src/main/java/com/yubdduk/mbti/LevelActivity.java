@@ -13,7 +13,7 @@ public class LevelActivity extends Activity {
         setContentView(R.layout.activity_level);
 
         Intent getIntent=getIntent();
-        int nation=getIntent.getIntExtra("nation",0);
+        String nation=getIntent.getStringExtra("nation");
         int time=getIntent.getIntExtra("time",0);
 
         Button lowbtn=(Button)findViewById(R.id.Button_low);

@@ -32,13 +32,14 @@
             android:layout_width="320dp"
             android:layout_height="60dp"
             android:text="볶음밥이 내 한계야.."
+        android:textColor="@color/white"
             android:background="@drawable/btn_flavor"
             android:layout_gravity="center"
             android:gravity="center"
             android:textSize="23sp"
             android:layout_marginBottom="30dp"
             android:fontFamily="@font/nanumbarunpenb"
-        android:textStyle="bold"
+            android:textStyle="bold"
             >
         </Button>
         <Button
@@ -46,8 +47,9 @@
             android:layout_width="320dp"
             android:layout_height="60dp"
             android:text="볶음밥은 껌이지~"
+            android:textColor="@color/white"
             android:background="@drawable/btn_flavor"
-            android:textSize="20sp"
+            android:textSize="23sp"
             android:fontFamily="@font/nanumbarunpenb"
             android:textStyle="bold"
             android:layout_marginBottom="30dp"

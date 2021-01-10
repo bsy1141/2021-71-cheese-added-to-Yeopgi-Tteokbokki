@@ -32,6 +32,7 @@
         android:id="@+id/Button_china"
         android:layout_width="320dp"
         android:layout_height="60dp"
+        android:textColor="@color/white"
         android:text="니하오~불맛 가득 중국음식"
         android:fontFamily="@font/nanumbarunpenb"
         android:background="@drawable/btn_flavor"
@@ -46,10 +47,11 @@
         android:id="@+id/Button_japan"
         android:layout_width="320dp"
         android:layout_height="60dp"
+        android:textColor="@color/white"
         android:text="곤니찌와~깔끔한 일본음식"
         android:fontFamily="@font/nanumbarunpenb"
         android:background="@drawable/btn_flavor"
-        android:textSize="20sp"
+        android:textSize="23sp"
         android:textStyle="bold"
         >
     </Button>
@@ -57,6 +59,7 @@
         android:id="@+id/Button_korea"
         android:layout_width="320dp"
         android:layout_height="60dp"
+        android:textColor="@color/white"
         android:text="한국인은 밥심이지!!"
         android:fontFamily="@font/nanumbarunpenb"
         android:background="@drawable/btn_flavor"
@@ -72,9 +75,10 @@
         android:layout_width="320dp"
         android:layout_height="60dp"
         android:text="Ciao 서양음식은 어때"
+        android:textColor="@color/white"
         android:fontFamily="@font/nanumbarunpenb"
         android:background="@drawable/btn_flavor"
-        android:textSize="20sp"
+        android:textSize="23sp"
         android:textStyle="bold"
 
         >
@@ -84,9 +88,10 @@
         android:layout_width="320dp"
         android:layout_height="60dp"
         android:text="흠..다 먹고싶은데..?"
+        android:textColor="@color/white"
         android:fontFamily="@font/nanumbarunpenb"
         android:background="@drawable/btn_flavor"
-        android:textSize="20sp"
+        android:textSize="23sp"
         android:layout_margin="20dp"
         android:textStyle="bold"
         >

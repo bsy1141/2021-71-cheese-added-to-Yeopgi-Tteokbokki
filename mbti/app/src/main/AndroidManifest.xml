@@ -23,6 +23,14 @@
 
         <activity android:name=".ReceipeActivity"></activity>
         <activity android:name=".MainActivity"></activity>
+        <activity android:name=".WillCookActivity"></activity>
+        <activity android:name=".FlavorActivity"></activity>
+        <activity android:name=".HungryActivity"></activity>
+        <activity android:name=".YesterdayActivity"></activity>
+        <activity android:name=".WillNotCook_ResultActivity"></activity>
+        <activity android:name=".NationActivity"></activity>
+        <activity android:name=".TimeActivity"></activity>
+        <activity android:name=".LevelActivity"></activity>
 
 
     </application>

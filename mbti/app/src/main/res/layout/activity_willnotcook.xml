@@ -53,6 +53,7 @@
         android:textSize="20dp"
         android:fontFamily="@font/nanumbarunpenb"
         android:textStyle="bold"
+        android:textColor="@color/white"
         android:paddingHorizontal="20dp"
         android:background="@drawable/btn_min"
         android:text="메인화면으로" />
